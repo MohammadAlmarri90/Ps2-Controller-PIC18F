@@ -1,0 +1,332 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K42 ]
+[d frameptr 16353 ]
+"79 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/spi1.c
+[e E355 . `uc
+SPI1_DEFAULT 0
+]
+"80 /Users/mohammad/MPLABXProjects/Ps2CONT.X/main.c
+[e E15731 . `uc
+SPI1_DEFAULT 0
+]
+"4 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"58 /Users/mohammad/MPLABXProjects/Ps2CONT.X/main.c
+[v _spiexchange spiexchange `(uc  1 e 1 0 ]
+"76
+[v _main main `(v  1 e 1 0 ]
+"50 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"79
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"100
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+[s S152 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+`uc 1 DMA1DCNTIF 1 0 :1:1 
+`uc 1 DMA1ORIF 1 0 :1:2 
+`uc 1 DMA1AIF 1 0 :1:3 
+`uc 1 SPI1RXIF 1 0 :1:4 
+`uc 1 SPI1TXIF 1 0 :1:5 
+`uc 1 SPI1IF 1 0 :1:6 
+`uc 1 I2C1RXIF 1 0 :1:7 
+]
+"4241 /Applications/microchip/mplabx/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8/pic/include/proc/pic18f25k42.h
+[s S161 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S164 . 1 `S152 1 . 1 0 `S161 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES164  1 e 1 @14754 ]
+"4686
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"4763
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"4833
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"4878
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"4940
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"4973
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"5018
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"5068
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"5207
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5499
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5550
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"7510
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @14869 ]
+"7660
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"7722
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"7784
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"7846
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"7908
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8280
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"8342
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"8404
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"8466
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"8528
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"8900
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"9008
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"9116
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9178
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9240
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9302
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9364
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"9736
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"9844
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"9952
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"9973
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"10733
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @15070 ]
+"10753
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @15071 ]
+"21447
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @15632 ]
+"21517
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @15633 ]
+"21594
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
+"21634
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
+[s S122 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"21655
+[s S128 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S134 . 1 `S122 1 . 1 0 `S128 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES134  1 e 1 @15636 ]
+"21700
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
+"21802
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @15638 ]
+[s S281 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"21907
+[s S290 . 1 `uc 1 SPI1RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 SPI1CLRBF 1 0 :1:2 
+`uc 1 SPI1RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SPI1TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 SPI1TXWE 1 0 :1:7 
+]
+[u S299 . 1 `S281 1 . 1 0 `S290 1 . 1 0 ]
+[v _SPI1STATUSbits SPI1STATUSbits `VES299  1 e 1 @15639 ]
+"22002
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @15641 ]
+"22256
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @15644 ]
+"44276
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+[s S240 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"44303
+[s S249 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+"44303
+[u S258 . 1 `S240 1 . 1 0 `S249 1 . 1 0 ]
+"44303
+"44303
+[v _LATAbits LATAbits `VES258  1 e 1 @16314 ]
+"44388
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"44500
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"44612
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"44674
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"44736
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S99 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"44753
+[u S108 . 1 `S99 1 . 1 0 ]
+"44753
+"44753
+[v _TRISCbits TRISCbits `VES108  1 e 1 @16324 ]
+[s S327 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"44822
+[s S336 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 LVDIN 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 RJPU 1 0 :1:7 
+]
+"44822
+[u S342 . 1 `S327 1 . 1 0 `S336 1 . 1 0 ]
+"44822
+"44822
+[v _PORTAbits PORTAbits `VES342  1 e 1 @16330 ]
+[s S88 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+"60 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[1]S88  1 s 5 spi1_configuration ]
+"76 /Users/mohammad/MPLABXProjects/Ps2CONT.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"83
+[v main@cmd cmd `uc  1 a 1 9 ]
+"129
+} 0
+"58
+[v _spiexchange spiexchange `(uc  1 e 1 0 ]
+{
+[v spiexchange@transfer transfer `uc  1 a 1 wreg ]
+"61
+[v spiexchange@receive receive `uc  1 a 1 3 ]
+"58
+[v spiexchange@transfer transfer `uc  1 a 1 wreg ]
+[v spiexchange@ACK ACK `a  1 p 1 1 ]
+[v spiexchange@transfer transfer `uc  1 a 1 2 ]
+"73
+} 0
+"100 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"102
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"106
+} 0
+"50 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"64 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"72 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"55 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"126
+} 0
+"58 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"79 /Users/mohammad/MPLABXProjects/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"81
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 1 ]
+"93
+} 0
