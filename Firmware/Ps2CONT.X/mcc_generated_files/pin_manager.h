@@ -65,6 +65,86 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set RX aliases
+#define RX_TRIS                 TRISAbits.TRISA0
+#define RX_LAT                  LATAbits.LATA0
+#define RX_PORT                 PORTAbits.RA0
+#define RX_WPU                  WPUAbits.WPUA0
+#define RX_OD                   ODCONAbits.ODCA0
+#define RX_ANS                  ANSELAbits.ANSELA0
+#define RX_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
+#define RX_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
+#define RX_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
+#define RX_GetValue()           PORTAbits.RA0
+#define RX_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
+#define RX_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
+#define RX_SetPullup()          do { WPUAbits.WPUA0 = 1; } while(0)
+#define RX_ResetPullup()        do { WPUAbits.WPUA0 = 0; } while(0)
+#define RX_SetPushPull()        do { ODCONAbits.ODCA0 = 0; } while(0)
+#define RX_SetOpenDrain()       do { ODCONAbits.ODCA0 = 1; } while(0)
+#define RX_SetAnalogMode()      do { ANSELAbits.ANSELA0 = 1; } while(0)
+#define RX_SetDigitalMode()     do { ANSELAbits.ANSELA0 = 0; } while(0)
+
+// get/set RY aliases
+#define RY_TRIS                 TRISAbits.TRISA1
+#define RY_LAT                  LATAbits.LATA1
+#define RY_PORT                 PORTAbits.RA1
+#define RY_WPU                  WPUAbits.WPUA1
+#define RY_OD                   ODCONAbits.ODCA1
+#define RY_ANS                  ANSELAbits.ANSELA1
+#define RY_SetHigh()            do { LATAbits.LATA1 = 1; } while(0)
+#define RY_SetLow()             do { LATAbits.LATA1 = 0; } while(0)
+#define RY_Toggle()             do { LATAbits.LATA1 = ~LATAbits.LATA1; } while(0)
+#define RY_GetValue()           PORTAbits.RA1
+#define RY_SetDigitalInput()    do { TRISAbits.TRISA1 = 1; } while(0)
+#define RY_SetDigitalOutput()   do { TRISAbits.TRISA1 = 0; } while(0)
+#define RY_SetPullup()          do { WPUAbits.WPUA1 = 1; } while(0)
+#define RY_ResetPullup()        do { WPUAbits.WPUA1 = 0; } while(0)
+#define RY_SetPushPull()        do { ODCONAbits.ODCA1 = 0; } while(0)
+#define RY_SetOpenDrain()       do { ODCONAbits.ODCA1 = 1; } while(0)
+#define RY_SetAnalogMode()      do { ANSELAbits.ANSELA1 = 1; } while(0)
+#define RY_SetDigitalMode()     do { ANSELAbits.ANSELA1 = 0; } while(0)
+
+// get/set LX aliases
+#define LX_TRIS                 TRISAbits.TRISA2
+#define LX_LAT                  LATAbits.LATA2
+#define LX_PORT                 PORTAbits.RA2
+#define LX_WPU                  WPUAbits.WPUA2
+#define LX_OD                   ODCONAbits.ODCA2
+#define LX_ANS                  ANSELAbits.ANSELA2
+#define LX_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
+#define LX_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
+#define LX_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
+#define LX_GetValue()           PORTAbits.RA2
+#define LX_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
+#define LX_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
+#define LX_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
+#define LX_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
+#define LX_SetPushPull()        do { ODCONAbits.ODCA2 = 0; } while(0)
+#define LX_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
+#define LX_SetAnalogMode()      do { ANSELAbits.ANSELA2 = 1; } while(0)
+#define LX_SetDigitalMode()     do { ANSELAbits.ANSELA2 = 0; } while(0)
+
+// get/set LY aliases
+#define LY_TRIS                 TRISAbits.TRISA3
+#define LY_LAT                  LATAbits.LATA3
+#define LY_PORT                 PORTAbits.RA3
+#define LY_WPU                  WPUAbits.WPUA3
+#define LY_OD                   ODCONAbits.ODCA3
+#define LY_ANS                  ANSELAbits.ANSELA3
+#define LY_SetHigh()            do { LATAbits.LATA3 = 1; } while(0)
+#define LY_SetLow()             do { LATAbits.LATA3 = 0; } while(0)
+#define LY_Toggle()             do { LATAbits.LATA3 = ~LATAbits.LATA3; } while(0)
+#define LY_GetValue()           PORTAbits.RA3
+#define LY_SetDigitalInput()    do { TRISAbits.TRISA3 = 1; } while(0)
+#define LY_SetDigitalOutput()   do { TRISAbits.TRISA3 = 0; } while(0)
+#define LY_SetPullup()          do { WPUAbits.WPUA3 = 1; } while(0)
+#define LY_ResetPullup()        do { WPUAbits.WPUA3 = 0; } while(0)
+#define LY_SetPushPull()        do { ODCONAbits.ODCA3 = 0; } while(0)
+#define LY_SetOpenDrain()       do { ODCONAbits.ODCA3 = 1; } while(0)
+#define LY_SetAnalogMode()      do { ANSELAbits.ANSELA3 = 1; } while(0)
+#define LY_SetDigitalMode()     do { ANSELAbits.ANSELA3 = 0; } while(0)
+
 // get/set ACK aliases
 #define ACK_TRIS                 TRISAbits.TRISA4
 #define ACK_LAT                  LATAbits.LATA4
@@ -84,6 +164,18 @@
 #define ACK_SetOpenDrain()       do { ODCONAbits.ODCA4 = 1; } while(0)
 #define ACK_SetAnalogMode()      do { ANSELAbits.ANSELA4 = 1; } while(0)
 #define ACK_SetDigitalMode()     do { ANSELAbits.ANSELA4 = 0; } while(0)
+
+// get/set RA5 procedures
+#define RA5_SetHigh()            do { LATAbits.LATA5 = 1; } while(0)
+#define RA5_SetLow()             do { LATAbits.LATA5 = 0; } while(0)
+#define RA5_Toggle()             do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0)
+#define RA5_GetValue()              PORTAbits.RA5
+#define RA5_SetDigitalInput()    do { TRISAbits.TRISA5 = 1; } while(0)
+#define RA5_SetDigitalOutput()   do { TRISAbits.TRISA5 = 0; } while(0)
+#define RA5_SetPullup()             do { WPUAbits.WPUA5 = 1; } while(0)
+#define RA5_ResetPullup()           do { WPUAbits.WPUA5 = 0; } while(0)
+#define RA5_SetAnalogMode()         do { ANSELAbits.ANSELA5 = 1; } while(0)
+#define RA5_SetDigitalMode()        do { ANSELAbits.ANSELA5 = 0; } while(0)
 
 // get/set R2 aliases
 #define R2_TRIS                 TRISAbits.TRISA6

@@ -79,9 +79,9 @@ void PIN_MANAGER_Initialize(void)
     WPUx registers
     */
     WPUE = 0x00;
-    WPUB = 0x00;
-    WPUA = 0x00;
-    WPUC = 0x00;
+    WPUB = 0xFF;
+    WPUA = 0xC0;
+    WPUC = 0xC7;
 
     /**
     RxyI2C registers
@@ -121,6 +121,7 @@ void PIN_MANAGER_Initialize(void)
     
 	
     SPI1SCKPPS = 0x13;   //RC3->SPI1:SCK1;    
+    SPI1SSPPS = 0x05;   //RA5->SPI1:SS1;    
     RC5PPS = 0x1F;   //RC5->SPI1:SDO1;    
     SPI1SDIPPS = 0x14;   //RC4->SPI1:SDI1;    
 }
