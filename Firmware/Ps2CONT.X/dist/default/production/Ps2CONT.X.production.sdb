@@ -3,15 +3,11 @@
 [d edition pro ]
 [d chip 18F25K42 ]
 [d frameptr 16353 ]
-"79 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/spi1.c
+"79 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
 [e E355 . `uc
 SPI1_DEFAULT 0
 ]
-"108 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\main.c
-[e E15775 . `uc
-SPI1_DEFAULT 0
-]
-"113 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/adcc.c
+"113 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/adcc.c
 [e E15396 . `uc
 RX 0
 RY 1
@@ -23,47 +19,75 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+"103 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
+[e E15775 . `uc
+SPI1_DEFAULT 0
+]
+"315
+[e E15411 . `uc
+RX 0
+RY 1
+LX 2
+LY 3
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"4 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+"62 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+"43 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+"54 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+"62 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+"19 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"10 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+"11 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+"8 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+"15 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+"91 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"104 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\main.c
+"10 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"99 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"163
+"157
 [v _updateButtons updateButtons `(v  1 e 1 0 ]
-"268
+"280
 [v _spiexchange spiexchange `(uc  1 e 1 0 ]
-"62 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/adcc.c
+"321
+[v _mapRange mapRange `(d  1 e 4 0 ]
+"62 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
-"50 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/mcc.c
+"113
+[v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
+"125
+[v _ADCC_IsConversionDone ADCC_IsConversionDone `(a  1 e 1 0 ]
+"131
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
+"50 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "59
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "73
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/pin_manager.c
+"55 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/spi1.c
+"64 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
 [v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
 "79
 [v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
@@ -78,7 +102,7 @@ channel_FVR_Buffer2 63
 `uc 1 SPI1IF 1 0 :1:6 
 `uc 1 I2C1RXIF 1 0 :1:7 
 ]
-"4241 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f25k42.h
+"4241 /Applications/microchip/mplabx/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8/pic/include/proc/pic18f25k42.h
 [s S166 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIF 1 0 :1:6 
 ]
@@ -187,7 +211,7 @@ channel_FVR_Buffer2 63
 [v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
 "21802
 [v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @15638 ]
-[s S413 . 1 `uc 1 RXBF 1 0 :1:0 
+[s S815 . 1 `uc 1 RXBF 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 CLRBF 1 0 :1:2 
 `uc 1 RXRE 1 0 :1:3 
@@ -197,7 +221,7 @@ channel_FVR_Buffer2 63
 `uc 1 TXWE 1 0 :1:7 
 ]
 "21907
-[s S422 . 1 `uc 1 SPI1RXBF 1 0 :1:0 
+[s S824 . 1 `uc 1 SPI1RXBF 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 SPI1CLRBF 1 0 :1:2 
 `uc 1 SPI1RXRE 1 0 :1:3 
@@ -206,8 +230,8 @@ channel_FVR_Buffer2 63
 `uc 1 . 1 0 :1:6 
 `uc 1 SPI1TXWE 1 0 :1:7 
 ]
-[u S431 . 1 `S413 1 . 1 0 `S422 1 . 1 0 ]
-[v _SPI1STATUSbits SPI1STATUSbits `VES431  1 e 1 @15639 ]
+[u S833 . 1 `S815 1 . 1 0 `S824 1 . 1 0 ]
+[v _SPI1STATUSbits SPI1STATUSbits `VES833  1 e 1 @15639 ]
 "22002
 [v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @15641 ]
 "22256
@@ -264,7 +288,7 @@ channel_FVR_Buffer2 63
 [v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
 "30531
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @16120 ]
-[s S568 . 1 `uc 1 GO 1 0 :1:0 
+[s S267 . 1 `uc 1 GO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM 1 0 :2:2 
 `uc 1 CS 1 0 :1:4 
@@ -273,7 +297,7 @@ channel_FVR_Buffer2 63
 `uc 1 ON 1 0 :1:7 
 ]
 "30573
-[s S576 . 1 `uc 1 ADGO 1 0 :1:0 
+[s S275 . 1 `uc 1 ADGO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM 1 0 :2:2 
 `uc 1 ADCS 1 0 :1:4 
@@ -281,50 +305,50 @@ channel_FVR_Buffer2 63
 `uc 1 ADCONT 1 0 :1:6 
 `uc 1 ADON 1 0 :1:7 
 ]
-[s S584 . 1 `uc 1 DONE 1 0 :1:0 
+[s S283 . 1 `uc 1 DONE 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM0 1 0 :1:2 
 ]
-[s S588 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+[s S287 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
 ]
-[s S590 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+[s S289 . 1 `uc 1 GO_nDONE 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM0 1 0 :1:2 
 ]
-[s S594 . 1 `uc 1 . 1 0 :7:0 
+[s S293 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 ADCAL 1 0 :1:7 
 ]
-[u S597 . 1 `S568 1 . 1 0 `S576 1 . 1 0 `S584 1 . 1 0 `S588 1 . 1 0 `S590 1 . 1 0 `S594 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES597  1 e 1 @16120 ]
+[u S296 . 1 `S267 1 . 1 0 `S275 1 . 1 0 `S283 1 . 1 0 `S287 1 . 1 0 `S289 1 . 1 0 `S293 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES296  1 e 1 @16120 ]
 "30658
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @16121 ]
-[s S830 . 1 `uc 1 DSEN 1 0 :1:0 
+[s S529 . 1 `uc 1 DSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 GPOL 1 0 :1:5 
 `uc 1 IPEN 1 0 :1:6 
 `uc 1 PPOL 1 0 :1:7 
 ]
 "30683
-[s S836 . 1 `uc 1 ADDSEN 1 0 :1:0 
+[s S535 . 1 `uc 1 ADDSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 ADGPOL 1 0 :1:5 
 `uc 1 ADIPEN 1 0 :1:6 
 `uc 1 ADPPOL 1 0 :1:7 
 ]
-[s S842 . 1 `uc 1 . 1 0 :5:0 
+[s S541 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 VCFG11 1 0 :1:5 
 ]
-[u S845 . 1 `S830 1 . 1 0 `S836 1 . 1 0 `S842 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES845  1 e 1 @16121 ]
+[u S544 . 1 `S529 1 . 1 0 `S535 1 . 1 0 `S541 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES544  1 e 1 @16121 ]
 "30733
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @16122 ]
-[s S691 . 1 `uc 1 MODE 1 0 :3:0 
+[s S390 . 1 `uc 1 MODE 1 0 :3:0 
 `uc 1 ACLR 1 0 :1:3 
 `uc 1 CRS 1 0 :3:4 
 `uc 1 PSIS 1 0 :1:7 
 ]
 "30781
-[s S696 . 1 `uc 1 ADMD0 1 0 :1:0 
+[s S395 . 1 `uc 1 ADMD0 1 0 :1:0 
 `uc 1 ADMD1 1 0 :1:1 
 `uc 1 ADMD2 1 0 :1:2 
 `uc 1 ADACLR 1 0 :1:3 
@@ -333,11 +357,11 @@ channel_FVR_Buffer2 63
 `uc 1 ADCRS2 1 0 :1:6 
 `uc 1 ADPSIS 1 0 :1:7 
 ]
-[s S705 . 1 `uc 1 ADMD 1 0 :3:0 
+[s S404 . 1 `uc 1 ADMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCRS 1 0 :3:4 
 ]
-[s S709 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S408 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -345,24 +369,24 @@ channel_FVR_Buffer2 63
 `uc 1 CRS1 1 0 :1:5 
 `uc 1 CRS2 1 0 :1:6 
 ]
-[s S717 . 1 `uc 1 MD 1 0 :3:0 
+[s S416 . 1 `uc 1 MD 1 0 :3:0 
 ]
-[s S719 . 1 `uc 1 MD0 1 0 :1:0 
+[s S418 . 1 `uc 1 MD0 1 0 :1:0 
 `uc 1 MD1 1 0 :1:1 
 `uc 1 MD2 1 0 :1:2 
 ]
-[s S723 . 1 `uc 1 ADMODE 1 0 :3:0 
+[s S422 . 1 `uc 1 ADMODE 1 0 :3:0 
 ]
-[u S725 . 1 `S691 1 . 1 0 `S696 1 . 1 0 `S705 1 . 1 0 `S709 1 . 1 0 `S717 1 . 1 0 `S719 1 . 1 0 `S723 1 . 1 0 ]
-[v _ADCON2bits ADCON2bits `VES725  1 e 1 @16122 ]
+[u S424 . 1 `S390 1 . 1 0 `S395 1 . 1 0 `S404 1 . 1 0 `S408 1 . 1 0 `S416 1 . 1 0 `S418 1 . 1 0 `S422 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES424  1 e 1 @16122 ]
 "30911
 [v _ADCON3 ADCON3 `VEuc  1 e 1 @16123 ]
-[s S636 . 1 `uc 1 TMD 1 0 :3:0 
+[s S335 . 1 `uc 1 TMD 1 0 :3:0 
 `uc 1 SOI 1 0 :1:3 
 `uc 1 CALC 1 0 :3:4 
 ]
 "30946
-[s S640 . 1 `uc 1 ADTMD0 1 0 :1:0 
+[s S339 . 1 `uc 1 ADTMD0 1 0 :1:0 
 `uc 1 ADTMD1 1 0 :1:1 
 `uc 1 ADTMD2 1 0 :1:2 
 `uc 1 ADSOI 1 0 :1:3 
@@ -370,11 +394,11 @@ channel_FVR_Buffer2 63
 `uc 1 ADCALC1 1 0 :1:5 
 `uc 1 ADCALC2 1 0 :1:6 
 ]
-[s S648 . 1 `uc 1 ADTMD 1 0 :3:0 
+[s S347 . 1 `uc 1 ADTMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCALC 1 0 :3:4 
 ]
-[s S652 . 1 `uc 1 TMD0 1 0 :1:0 
+[s S351 . 1 `uc 1 TMD0 1 0 :1:0 
 `uc 1 TMD1 1 0 :1:1 
 `uc 1 TMD2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -382,11 +406,11 @@ channel_FVR_Buffer2 63
 `uc 1 CALC1 1 0 :1:5 
 `uc 1 CALC2 1 0 :1:6 
 ]
-[u S660 . 1 `S636 1 . 1 0 `S640 1 . 1 0 `S648 1 . 1 0 `S652 1 . 1 0 ]
-[v _ADCON3bits ADCON3bits `VES660  1 e 1 @16123 ]
+[u S359 . 1 `S335 1 . 1 0 `S339 1 . 1 0 `S347 1 . 1 0 `S351 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES359  1 e 1 @16123 ]
 "31041
 [v _ADSTAT ADSTAT `VEuc  1 e 1 @16124 ]
-[s S770 . 1 `uc 1 STAT 1 0 :3:0 
+[s S469 . 1 `uc 1 STAT 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 MATH 1 0 :1:4 
 `uc 1 LTHR 1 0 :1:5 
@@ -394,7 +418,7 @@ channel_FVR_Buffer2 63
 `uc 1 OV 1 0 :1:7 
 ]
 "31076
-[s S777 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+[s S476 . 1 `uc 1 ADSTAT0 1 0 :1:0 
 `uc 1 ADSTAT1 1 0 :1:1 
 `uc 1 ADSTAT2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -403,16 +427,16 @@ channel_FVR_Buffer2 63
 `uc 1 ADUTHR 1 0 :1:6 
 `uc 1 ADAOV 1 0 :1:7 
 ]
-[s S786 . 1 `uc 1 ADSTAT 1 0 :3:0 
+[s S485 . 1 `uc 1 ADSTAT 1 0 :3:0 
 `uc 1 . 1 0 :4:3 
 `uc 1 ADOV 1 0 :1:7 
 ]
-[s S790 . 1 `uc 1 STAT0 1 0 :1:0 
+[s S489 . 1 `uc 1 STAT0 1 0 :1:0 
 `uc 1 STAT1 1 0 :1:1 
 `uc 1 STAT2 1 0 :1:2 
 ]
-[u S794 . 1 `S770 1 . 1 0 `S777 1 . 1 0 `S786 1 . 1 0 `S790 1 . 1 0 ]
-[v _ADSTATbits ADSTATbits `VES794  1 e 1 @16124 ]
+[u S493 . 1 `S469 1 . 1 0 `S476 1 . 1 0 `S485 1 . 1 0 `S489 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES493  1 e 1 @16124 ]
 "31166
 [v _ADREF ADREF `VEuc  1 e 1 @16125 ]
 "31248
@@ -421,7 +445,7 @@ channel_FVR_Buffer2 63
 [v _ADCLK ADCLK `VEuc  1 e 1 @16127 ]
 "44276
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
-[s S307 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S709 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -431,7 +455,7 @@ channel_FVR_Buffer2 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "44303
-[s S316 . 1 `uc 1 LA0 1 0 :1:0 
+[s S718 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -441,10 +465,10 @@ channel_FVR_Buffer2 63
 `uc 1 LA7 1 0 :1:7 
 ]
 "44303
-[u S325 . 1 `S307 1 . 1 0 `S316 1 . 1 0 ]
+[u S727 . 1 `S709 1 . 1 0 `S718 1 . 1 0 ]
 "44303
 "44303
-[v _LATAbits LATAbits `VES325  1 e 1 @16314 ]
+[v _LATAbits LATAbits `VES727  1 e 1 @16314 ]
 "44388
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
 "44500
@@ -469,7 +493,7 @@ channel_FVR_Buffer2 63
 "44753
 "44753
 [v _TRISCbits TRISCbits `VES113  1 e 1 @16324 ]
-[s S263 . 1 `uc 1 RA0 1 0 :1:0 
+[s S665 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -479,18 +503,18 @@ channel_FVR_Buffer2 63
 `uc 1 RA7 1 0 :1:7 
 ]
 "44822
-[s S272 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+[s S674 . 1 `uc 1 ULPWUIN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 LVDIN 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 RJPU 1 0 :1:7 
 ]
 "44822
-[u S278 . 1 `S263 1 . 1 0 `S272 1 . 1 0 ]
+[u S680 . 1 `S665 1 . 1 0 `S674 1 . 1 0 ]
 "44822
 "44822
-[v _PORTAbits PORTAbits `VES278  1 e 1 @16330 ]
-[s S384 . 1 `uc 1 RB0 1 0 :1:0 
+[v _PORTAbits PORTAbits `VES680  1 e 1 @16330 ]
+[s S786 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -500,15 +524,15 @@ channel_FVR_Buffer2 63
 `uc 1 RB7 1 0 :1:7 
 ]
 "44903
-[s S393 . 1 `uc 1 . 1 0 :3:0 
+[s S795 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 CCP2_PA2 1 0 :1:3 
 ]
 "44903
-[u S396 . 1 `S384 1 . 1 0 `S393 1 . 1 0 ]
+[u S798 . 1 `S786 1 . 1 0 `S795 1 . 1 0 ]
 "44903
 "44903
-[v _PORTBbits PORTBbits `VES396  1 e 1 @16331 ]
-[s S347 . 1 `uc 1 RC0 1 0 :1:0 
+[v _PORTBbits PORTBbits `VES798  1 e 1 @16331 ]
+[s S749 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -518,24 +542,26 @@ channel_FVR_Buffer2 63
 `uc 1 RC7 1 0 :1:7 
 ]
 "44979
-[s S356 . 1 `uc 1 . 1 0 :1:0 
+[s S758 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
 "44979
-[s S360 . 1 `uc 1 . 1 0 :1:0 
+[s S762 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
 "44979
-[u S363 . 1 `S347 1 . 1 0 `S356 1 . 1 0 `S360 1 . 1 0 ]
+[u S765 . 1 `S749 1 . 1 0 `S758 1 . 1 0 `S762 1 . 1 0 ]
 "44979
 "44979
-[v _PORTCbits PORTCbits `VES363  1 e 1 @16332 ]
-"65 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\main.c
+[v _PORTCbits PORTCbits `VES765  1 e 1 @16332 ]
+"52 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
+[v _analogMode analogMode `a  1 e 1 0 ]
+"53
 [v _buttons1 buttons1 `uc  1 e 1 0 ]
-"66
+"54
 [v _buttons2 buttons2 `uc  1 e 1 0 ]
-[s S235 buttonbits1 1 `uc 1 select 1 0 :1:0 
+[s S637 buttonbits1 1 `uc 1 select 1 0 :1:0 
 `uc 1 JOYR 1 0 :1:1 
 `uc 1 JOYL 1 0 :1:2 
 `uc 1 start 1 0 :1:3 
@@ -544,9 +570,9 @@ channel_FVR_Buffer2 63
 `uc 1 down 1 0 :1:6 
 `uc 1 left 1 0 :1:7 
 ]
-"83
-[v _param1 param1 `S235  1 e 1 0 ]
-[s S244 buttonbits2 1 `uc 1 L2 1 0 :1:0 
+"76
+[v _param1 param1 `S637  1 e 1 0 ]
+[s S646 buttonbits2 1 `uc 1 L2 1 0 :1:0 
 `uc 1 R2 1 0 :1:1 
 `uc 1 L1 1 0 :1:2 
 `uc 1 R1 1 0 :1:3 
@@ -555,36 +581,36 @@ channel_FVR_Buffer2 63
 `uc 1 cross 1 0 :1:6 
 `uc 1 square 1 0 :1:7 
 ]
-"96
-[v _param2 param2 `S244  1 e 1 0 ]
+"89
+[v _param2 param2 `S646  1 e 1 0 ]
 [s S93 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
-"60 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/spi1.c
+"60 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
 [v _spi1_configuration spi1_configuration `C[1]S93  1 s 5 spi1_configuration ]
-"104 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\main.c
+"99 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"111
-[v main@cmd cmd `uc  1 a 1 12 ]
-"157
+"105
+[v main@cmd cmd `uc  1 a 1 10 ]
+"151
 } 0
-"163
+"157
 [v _updateButtons updateButtons `(v  1 e 1 0 ]
 {
-"265
+"277
 } 0
-"268
+"280
 [v _spiexchange spiexchange `(uc  1 e 1 0 ]
 {
 [v spiexchange@transfer transfer `uc  1 a 1 wreg ]
-"271
+"283
 [v spiexchange@receive receive `uc  1 a 1 3 ]
-"268
+"280
 [v spiexchange@transfer transfer `uc  1 a 1 wreg ]
 [v spiexchange@ACK ACK `a  1 p 1 1 ]
 [v spiexchange@transfer transfer `uc  1 a 1 2 ]
-"283
+"295
 } 0
-"100 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/spi1.c
+"100 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
 [v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
 {
 [v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
@@ -593,37 +619,37 @@ channel_FVR_Buffer2 63
 [v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
 "106
 } 0
-"50 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/mcc.c
+"50 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "57
 } 0
-"64 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/spi1.c
+"64 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
 [v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"73 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/mcc.c
+"73 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "91
 } 0
-"55 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/pin_manager.c
+"55 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "127
 } 0
-"59 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/mcc.c
+"59 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "71
 } 0
-"62 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/adcc.c
+"62 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "111
 } 0
-"79 C:\Users\super\Desktop\PS2 Controller Emulator docs\Firmware\Ps2-Controller-PIC18F\Firmware\Ps2CONT.X\mcc_generated_files/spi1.c
+"79 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
 [v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
 {
 [v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]

@@ -45,25 +45,18 @@
 
 /*Defines*/
 #define SS PORTAbits.RA5
-//#define start 1
-//#define select 1
-//#define up 1
-//#define down 1
-//#define left 1
-//#define right 1
-//#define triangle 1
-//#define circle 1
-//#define cross 1
-//#define square 1
-//#define L1 1
-//#define L2 1
-//#define R1 1
-//#define R2 1
+
 
 /*Variables*/
 int counter = 0;
+bool analogMode = false;
 unsigned char buttons1 = 0;
 unsigned char buttons2 = 0;
+unsigned char analogRX = 0x80;
+unsigned char analogRY = 0x80;
+unsigned char analogLX = 0x80;
+unsigned char analogLY = 0x80;
+
 char parseIndex = 0;
 char recievedUpdate = 0;
 int timeoutCounter = 0;
@@ -99,6 +92,8 @@ struct buttonbits2 param2;  // data byte two of button presses.
 void updateButtons();
 unsigned char spiexchange(unsigned char transfer, bool ACK);
 unsigned int reverseBits(unsigned int num);
+unsigned int convertMap(unsigned int channel);
+double mapRange(double a1,double a2,double b1,double b2,double s);
 
 
 void main(void)
@@ -107,8 +102,9 @@ void main(void)
     SYSTEM_Initialize();
     SPI1_Open(SPI1_DEFAULT);
     __delay_ms(200);            //time for the spi to start
-    char cmd = 0;                   //A variable to store whatever we receive from the psx.
-
+    char cmd = 0;               //A variable to store whatever we receive from the psx.
+    param1.JOYL = 1;            //unimplemented, keep unpressed
+    param1.JOYR = 1 ;           //unimplemented, keep unpressed
     while (1)
     {
 idle:        
@@ -121,28 +117,34 @@ idle:
         }
         
         cmd = spiexchange(0xff,1);
-
-        
-        
         if(cmd == 0x01)
         {
-        cmd = spiexchange(0x41, 1);
+            //if(!analogMode)
+            //{
+                spiexchange(0x41, 1);
+                spiexchange(0x5A, 1); 
+                spiexchange(buttons1,1);
+                spiexchange(buttons2,0);
+//            }else
+//            {
+//                spiexchange(0x73, 1);
+//                spiexchange(0x5A, 1);
+//                spiexchange(buttons1,1);
+//                spiexchange(buttons2,1);
+//                spiexchange(analogRX,1);
+//                spiexchange(analogRY,1);
+//                spiexchange(analogLX,1);
+//                spiexchange(analogLY,0);
+//                
+//                
+//            }
         }
-        
-        if(cmd == 0x42)
-        {
-            spiexchange(0x5A, 1);
-        }
-        
-        
-        spiexchange(buttons1,1);
-        spiexchange(buttons2,0);
         
 //finish:
     ACK_SetHigh();
     if(!SS)
     {
-        __delay_us(50);
+        __delay_us(20);
     }
 
     }
@@ -154,6 +156,7 @@ idle:
 //Reads all the button changes, updates 60 times a second
 void updateButtons()
 {
+    
     if(R2_GetValue())       /*Button presses are 1 for unpressed and 0 for pressed*/
     {
         param2.R2 = 1;
@@ -252,6 +255,21 @@ void updateButtons()
     {
         param1.right = 0;
     }
+    if(ANALOG_GetValue())
+    {
+        analogMode = true;
+    }else
+    {
+        analogMode = false;
+    }
+//    if(analogMode)
+//    {
+//        analogRX = convertMap(RX);
+//        analogRY = convertMap(RY);
+//        analogLX = convertMap(LX);
+//        analogLY = convertMap(LY);
+//    }
+    
     
     buttons1 = (param1.left << 7) | (param1.down << 6) | (param1.right << 5) | (param1.up << 4) | (param1.start << 3) | param1.select;
     buttons2 = (param2.square << 7) | (param2.cross << 6) | (param2.circle << 5) | (param2.triangle << 4) | (param2.R1 << 3) | (param2.L1 << 2) | (param2.R2 << 1) | param2.L2;
@@ -270,7 +288,7 @@ unsigned char spiexchange(unsigned char transfer, bool ACK)
     {
         __delay_us(20);
         ACK_SetLow();
-        __delay_us(2.5);
+        __delay_us(2.6);
         ACK_SetHigh();
     }
     return receive;
@@ -289,6 +307,20 @@ unsigned int reverseBits(unsigned int num)
     }
    
     return reverse_num;
+}
+
+unsigned int convertMap(unsigned int channel)
+{
+    unsigned int result = 0;
+    ADCC_StartConversion(channel);
+    while(!ADCC_IsConversionDone());
+    result = ADCC_GetConversionResult();
+    return mapRange(0, 4095, 0, 255, result);
+}
+
+double mapRange(double a1,double a2,double b1,double b2,double s)
+{
+	return b1 + (s-a1)*(b2-b1)/(a2-a1);
 }
 
 /**
