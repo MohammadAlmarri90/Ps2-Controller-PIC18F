@@ -1,0 +1,660 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K42 ]
+[d frameptr 16353 ]
+"79 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
+[e E355 . `uc
+SPI1_DEFAULT 0
+]
+"113 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/adcc.c
+[e E15396 . `uc
+RX 0
+RY 1
+LX 2
+LY 3
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"103 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
+[e E15775 . `uc
+SPI1_DEFAULT 0
+]
+"315
+[e E15411 . `uc
+RX 0
+RY 1
+LX 2
+LY 3
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"4 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 /Applications/microchip/xc8/v2.30/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"99 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"157
+[v _updateButtons updateButtons `(v  1 e 1 0 ]
+"280
+[v _spiexchange spiexchange `(uc  1 e 1 0 ]
+"321
+[v _mapRange mapRange `(d  1 e 4 0 ]
+"62 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"113
+[v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
+"125
+[v _ADCC_IsConversionDone ADCC_IsConversionDone `(a  1 e 1 0 ]
+"131
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
+"50 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"59
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"73
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"79
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"100
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+[s S157 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+`uc 1 DMA1DCNTIF 1 0 :1:1 
+`uc 1 DMA1ORIF 1 0 :1:2 
+`uc 1 DMA1AIF 1 0 :1:3 
+`uc 1 SPI1RXIF 1 0 :1:4 
+`uc 1 SPI1TXIF 1 0 :1:5 
+`uc 1 SPI1IF 1 0 :1:6 
+`uc 1 I2C1RXIF 1 0 :1:7 
+]
+"4241 /Applications/microchip/mplabx/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8/pic/include/proc/pic18f25k42.h
+[s S166 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S169 . 1 `S157 1 . 1 0 `S166 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES169  1 e 1 @14754 ]
+"4686
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"4763
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"4833
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"4878
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"4940
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"4973
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"5018
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"5068
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"5207
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5499
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5550
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"7510
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @14869 ]
+"7660
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"7722
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"7784
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"7846
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"7908
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8280
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"8342
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"8404
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"8466
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"8528
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"8900
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"9008
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"9116
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9178
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9240
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9302
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9364
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"9736
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"9844
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"9952
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"9973
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"10733
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @15070 ]
+"10753
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @15071 ]
+"10773
+[v _SPI1SSPPS SPI1SSPPS `VEuc  1 e 1 @15072 ]
+"21447
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @15632 ]
+"21517
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @15633 ]
+"21594
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
+"21634
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
+[s S127 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"21655
+[s S133 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S139 . 1 `S127 1 . 1 0 `S133 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES139  1 e 1 @15636 ]
+"21700
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
+"21802
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @15638 ]
+[s S815 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"21907
+[s S824 . 1 `uc 1 SPI1RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 SPI1CLRBF 1 0 :1:2 
+`uc 1 SPI1RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SPI1TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 SPI1TXWE 1 0 :1:7 
+]
+[u S833 . 1 `S815 1 . 1 0 `S824 1 . 1 0 ]
+[v _SPI1STATUSbits SPI1STATUSbits `VES833  1 e 1 @15639 ]
+"22002
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @15641 ]
+"22256
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @15644 ]
+"27406
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @16094 ]
+"27534
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @16095 ]
+"27669
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @16096 ]
+"27797
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @16097 ]
+"27932
+[v _ADERRL ADERRL `VEuc  1 e 1 @16098 ]
+"28060
+[v _ADERRH ADERRH `VEuc  1 e 1 @16099 ]
+"28195
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @16100 ]
+"28323
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @16101 ]
+"28458
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @16102 ]
+"28586
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @16103 ]
+"28723
+[v _ADACCL ADACCL `VEuc  1 e 1 @16104 ]
+"28851
+[v _ADACCH ADACCH `VEuc  1 e 1 @16105 ]
+"28979
+[v _ADACCU ADACCU `VEuc  1 e 1 @16106 ]
+"29107
+[v _ADCNT ADCNT `VEuc  1 e 1 @16107 ]
+"29235
+[v _ADRPT ADRPT `VEuc  1 e 1 @16108 ]
+"29370
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @16109 ]
+"29498
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @16110 ]
+"29633
+[v _ADRESL ADRESL `VEuc  1 e 1 @16111 ]
+"29761
+[v _ADRESH ADRESH `VEuc  1 e 1 @16112 ]
+"29881
+[v _ADPCH ADPCH `VEuc  1 e 1 @16113 ]
+"29992
+[v _ADACQL ADACQL `VEuc  1 e 1 @16115 ]
+"30120
+[v _ADACQH ADACQH `VEuc  1 e 1 @16116 ]
+"30212
+[v _ADCAP ADCAP `VEuc  1 e 1 @16117 ]
+"30311
+[v _ADPREL ADPREL `VEuc  1 e 1 @16118 ]
+"30439
+[v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
+"30531
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @16120 ]
+[s S267 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"30573
+[s S275 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S283 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+]
+[s S287 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+[s S289 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[s S293 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[u S296 . 1 `S267 1 . 1 0 `S275 1 . 1 0 `S283 1 . 1 0 `S287 1 . 1 0 `S289 1 . 1 0 `S293 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES296  1 e 1 @16120 ]
+"30658
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @16121 ]
+[s S529 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"30683
+[s S535 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[s S541 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S544 . 1 `S529 1 . 1 0 `S535 1 . 1 0 `S541 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES544  1 e 1 @16121 ]
+"30733
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @16122 ]
+[s S390 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"30781
+[s S395 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S404 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S408 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[s S416 . 1 `uc 1 MD 1 0 :3:0 
+]
+[s S418 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+]
+[s S422 . 1 `uc 1 ADMODE 1 0 :3:0 
+]
+[u S424 . 1 `S390 1 . 1 0 `S395 1 . 1 0 `S404 1 . 1 0 `S408 1 . 1 0 `S416 1 . 1 0 `S418 1 . 1 0 `S422 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES424  1 e 1 @16122 ]
+"30911
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @16123 ]
+[s S335 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"30946
+[s S339 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S347 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S351 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S359 . 1 `S335 1 . 1 0 `S339 1 . 1 0 `S347 1 . 1 0 `S351 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES359  1 e 1 @16123 ]
+"31041
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @16124 ]
+[s S469 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 OV 1 0 :1:7 
+]
+"31076
+[s S476 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S485 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+[s S489 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+]
+[u S493 . 1 `S469 1 . 1 0 `S476 1 . 1 0 `S485 1 . 1 0 `S489 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES493  1 e 1 @16124 ]
+"31166
+[v _ADREF ADREF `VEuc  1 e 1 @16125 ]
+"31248
+[v _ADACT ADACT `VEuc  1 e 1 @16126 ]
+"31340
+[v _ADCLK ADCLK `VEuc  1 e 1 @16127 ]
+"44276
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+[s S709 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"44303
+[s S718 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+"44303
+[u S727 . 1 `S709 1 . 1 0 `S718 1 . 1 0 ]
+"44303
+"44303
+[v _LATAbits LATAbits `VES727  1 e 1 @16314 ]
+"44388
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"44500
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"44612
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"44674
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"44736
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S104 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"44753
+[u S113 . 1 `S104 1 . 1 0 ]
+"44753
+"44753
+[v _TRISCbits TRISCbits `VES113  1 e 1 @16324 ]
+[s S665 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"44822
+[s S674 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 LVDIN 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 RJPU 1 0 :1:7 
+]
+"44822
+[u S680 . 1 `S665 1 . 1 0 `S674 1 . 1 0 ]
+"44822
+"44822
+[v _PORTAbits PORTAbits `VES680  1 e 1 @16330 ]
+[s S786 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"44903
+[s S795 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+"44903
+[u S798 . 1 `S786 1 . 1 0 `S795 1 . 1 0 ]
+"44903
+"44903
+[v _PORTBbits PORTBbits `VES798  1 e 1 @16331 ]
+[s S749 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"44979
+[s S758 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+"44979
+[s S762 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+"44979
+[u S765 . 1 `S749 1 . 1 0 `S758 1 . 1 0 `S762 1 . 1 0 ]
+"44979
+"44979
+[v _PORTCbits PORTCbits `VES765  1 e 1 @16332 ]
+"52 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
+[v _analogMode analogMode `a  1 e 1 0 ]
+"53
+[v _buttons1 buttons1 `uc  1 e 1 0 ]
+"54
+[v _buttons2 buttons2 `uc  1 e 1 0 ]
+[s S637 buttonbits1 1 `uc 1 select 1 0 :1:0 
+`uc 1 JOYR 1 0 :1:1 
+`uc 1 JOYL 1 0 :1:2 
+`uc 1 start 1 0 :1:3 
+`uc 1 up 1 0 :1:4 
+`uc 1 right 1 0 :1:5 
+`uc 1 down 1 0 :1:6 
+`uc 1 left 1 0 :1:7 
+]
+"76
+[v _param1 param1 `S637  1 e 1 0 ]
+[s S646 buttonbits2 1 `uc 1 L2 1 0 :1:0 
+`uc 1 R2 1 0 :1:1 
+`uc 1 L1 1 0 :1:2 
+`uc 1 R1 1 0 :1:3 
+`uc 1 triangle 1 0 :1:4 
+`uc 1 circle 1 0 :1:5 
+`uc 1 cross 1 0 :1:6 
+`uc 1 square 1 0 :1:7 
+]
+"89
+[v _param2 param2 `S646  1 e 1 0 ]
+[s S93 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+"60 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[1]S93  1 s 5 spi1_configuration ]
+"99 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"105
+[v main@cmd cmd `uc  1 a 1 10 ]
+"151
+} 0
+"157
+[v _updateButtons updateButtons `(v  1 e 1 0 ]
+{
+"277
+} 0
+"280
+[v _spiexchange spiexchange `(uc  1 e 1 0 ]
+{
+[v spiexchange@transfer transfer `uc  1 a 1 wreg ]
+"283
+[v spiexchange@receive receive `uc  1 a 1 3 ]
+"280
+[v spiexchange@transfer transfer `uc  1 a 1 wreg ]
+[v spiexchange@ACK ACK `a  1 p 1 1 ]
+[v spiexchange@transfer transfer `uc  1 a 1 2 ]
+"295
+} 0
+"100 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"102
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"106
+} 0
+"50 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"57
+} 0
+"64 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"73 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"127
+} 0
+"59 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"62 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"79 /Users/mohammad/Desktop/ps2 controller/Ps2-Controller-PIC18F/Firmware/Ps2CONT.X/mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"81
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 1 ]
+"93
+} 0
